@@ -1,7 +1,7 @@
 # BoredAPI
 Приложение с использованием boredAPI, YandexTranslate и MyMemoryApi 
 
-![d](https://github.com/DnkDm/App_with_boredAPI-YandexTranslate-MyMemoryAPI/blob/main/img/picP.png?raw=true)
+<img src="path/to/screenshot.png](https://github.com/DnkDm/App_with_boredAPI-YandexTranslate-MyMemoryAPI/blob/main/img/picP.png?raw=true" width="500">
 
 Приложение отправляет запрос boredAPI и полученныей ответ, который приходит на Английской языке, после чего прилжение отправляет строчку которую надо перевести в YandexTranslate API и получает переведенную на Русский язык строчку. На основе этих данных приложение делает карточку, который видет пользователь на своейм экране устройства. 
 

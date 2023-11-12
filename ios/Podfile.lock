@@ -1,0 +1,29 @@
+PODS:
+  - connectivity (0.0.1):
+    - Flutter
+    - Reachability
+  - Flutter (1.0.0)
+  - Reachability (3.2)
+
+DEPENDENCIES:
+  - connectivity (from `.symlinks/plugins/connectivity/ios`)
+  - Flutter (from `Flutter`)
+
+SPEC REPOS:
+  trunk:
+    - Reachability
+
+EXTERNAL SOURCES:
+  connectivity:
+    :path: ".symlinks/plugins/connectivity/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  connectivity: c4130b2985d4ef6fd26f9702e886bd5260681467
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+
+PODFILE CHECKSUM: 70d9d25280d0dd177a5f637cdb0f0b0b12c6a189
+
+COCOAPODS: 1.13.0

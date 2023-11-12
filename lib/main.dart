@@ -145,8 +145,20 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0x222222),
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        systemOverlayStyle: const SystemUiOverlayStyle(
+          // Status bar color
+          statusBarColor: Colors.transparent,
 
+          // Status bar brightness (optional)
+          statusBarIconBrightness: Brightness.light, // For Android (dark icons)
+          statusBarBrightness: Brightness.dark, // For iOS (dark icons)
+        ),
+      ),
+      backgroundColor: Color(0x222222),
       body: Stack(children: [
         AnimatedOpacity(
             duration: Duration(seconds: 1),
@@ -163,7 +175,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // Продолжительность анимации (в данном случае 1 секунда)
           opacity: isLoaded ? 1.0 : 0.0,
           child: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/v1.png'), // Укажите путь к вашему изображению
                 fit: BoxFit.cover, // Масштабируем изображение, чтобы оно покрывало весь экран
@@ -254,7 +266,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   // Индикатор текущей карточки
                   /*Text('Current Card: $_currentCardIndex',
                       style: TextStyle(fontSize: 20)),*/
-                  SizedBox(height: 60,),
+                  const SizedBox(height: 60,),
                   ElevatedButton(
                     onPressed: () async {
                       await Future.delayed(const Duration(milliseconds: 30));
@@ -264,16 +276,16 @@ class _MyHomePageState extends State<MyHomePage> {
                         await _carouselController.nextPage();
                       }
                     },
-                    child: Text(
+                    style: ElevatedButton.styleFrom(
+                      primary: colorButton,
+                        minimumSize: Size(182, 62)// Устанавливаем цвет кнопки
+                    ),
+                    child: const Text(
                       'Дальше ',
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w700,
                           fontSize: 22, fontFamily: 'GrandisExtended',),
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      primary: colorButton,
-                        minimumSize: Size(182, 62)// Устанавливаем цвет кнопки
                     ),
                   )
                 ],
@@ -294,7 +306,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               Text(
                 act,
-                style: TextStyle(
+                style: const TextStyle(
                     fontSize: 18, fontFamily: 'GrandisExtended',
                     color: Colors.white,
                     fontWeight: FontWeight.w700),
@@ -302,7 +314,7 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(height: 20,),
               Text(
                 activ,
-                style: TextStyle(
+                style: const TextStyle(
                     fontSize: 28, fontFamily: 'GrandisExtended',
                     color: Colors.white,
                     fontWeight: FontWeight.w900),

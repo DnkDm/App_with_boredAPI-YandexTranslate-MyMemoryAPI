@@ -5,7 +5,8 @@
 
 Приложение отправляет запрос boredAPI и полученныей ответ, который приходит на Английской языке, после чего прилжение отправляет строчку которую надо перевести в YandexTranslate API и получает переведенную на Русский язык строчку. На основе этих данных приложение делает карточку, который видет пользователь на своейм экране устройства. 
 
-![d](https://github.com/DnkDm/App_with_boredAPI-YandexTranslate-MyMemoryAPI/blob/main/img/picDou.png?raw=true)
+
+![d](https://github.com/DnkDm/App_with_boredAPI-YandexTranslate-MyMemoryAPI/blob/main/img/DoiApp.gif?raw=true)
 
 Так как YandexTranslate API платный, то его надо использовать минимально возможное количество раз. Поэтому карточки в приложении генерируются ровно в тот момент, когда пользователь подходит к концу "Карусели", генерация карточек происходит незаметно для пользователя. 
 
@@ -14,7 +15,7 @@
 Первое обновление, которое пулучило приложение, это смена YandexTranslateAPI на MyMemoryApi, так как MyMemoryApi бесплатен (есть дневной лимит)
 YandexTranslate API не был вырезан из приложения, но и никак больше там неиспользуется. 
 
-![d](https://github.com/DnkDm/App_with_boredAPI-YandexTranslate-MyMemoryAPI/blob/main/img/DoiApp.gif?raw=true)
+![d](https://github.com/DnkDm/App_with_boredAPI-YandexTranslate-MyMemoryAPI/blob/main/img/picDou.png?raw=true)
 
 A new Flutter project.
 
